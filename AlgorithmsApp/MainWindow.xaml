@@ -1,0 +1,49 @@
+﻿<Window x:Class="AlgorithmsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlgorithmsApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="300">
+    <Grid Margin=" 10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="0">numParticles :</Label>
+        <TextBox Margin="0 10 0 0" Name="numParticlestxt" Grid.Column="1" Grid.Row="0"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="1">maxIterations :</Label>
+        <TextBox Margin="0 10 0 0" Name="maxIterationstxt" Grid.Column="1" Grid.Row="1"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="2">inertia :</Label>
+        <TextBox Margin="0 10 0 0" Name="inertiatxt" Grid.Column="1" Grid.Row="2"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="3">cognitive :</Label>
+        <TextBox Margin="0 10 0 0" Name="cognitivetxt" Grid.Column="1" Grid.Row="3"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="4">social :</Label>
+        <TextBox Margin="0 10 0 0" Name="socialtxt" Grid.Column="1" Grid.Row="4"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="5">numDimensions :</Label>
+        <TextBox Margin="0 10 0 0" Name="numDimensionstxt" Grid.Column="1" Grid.Row="5"/>
+
+        <Label Margin="0 10 0 0" Grid.Column="0" Grid.Row="6">X :</Label>
+        <TextBox Margin="0 10 0 0" Name="Xtxt" Grid.Column="1" Grid.Row="6"/>
+
+        <Button Margin="0 30 0 0" Grid.Column="1" Grid.Row="7" Click="Solve_Click"> Solve </Button>
+    </Grid>
+</Window>
